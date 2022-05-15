@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Licence</title>
+    </head>
+    <body style="text-align: center">
+        <h1>Inscription en Licence</h1>
+        <form action="q4.html" methode="get" name="Licence">
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                Votre nom :
+                <input type="text" name="nom" placeholder="Votre nom?" />
+                <br />
+                Votre prénom :
+                <input type="text" name="prenom" placeholder="Votre prenom?" />
+                <br />
+                Votre âge :
+                <input type="number" name="age" placeholder="Votre age?" />
+                <br />
+                Votre adresse :
+                <textarea
+                    name="adresse"
+                    rows="7"
+                    cols="20"
+                    placeholder="Votre adresse?"
+                >
+                </textarea>
+                <br />
+                Votre adresse e-mail : <input type="email" name="email" />
+                <br />
+                Votre site web : <input type="url" name="site" />
+                <br />
+                Votre date de naissance : <input type="date" name="naissance" />
+                <br />
+                Mot de passe : <input type="password" name="mdp" required />
+                <br />
+                Retaper votre Mot de passe :
+                <input type="password" name="mdp" required />
+                <br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Gestion des groupes et des options</legend>
+                Votre groupe :
+                <input type="radio" name="groupe" value="Groupe1" /> Groupe1
+                <input type="radio" name="groupe" value="Groupe2" /> Groupe 2
+                <input type="radio" name="groupe" value="Groupe3" /> Groupe 3
+                <br />
+                Numéro de la carte d'étudiant
+                <input
+                    type="number"
+                    name="numero"
+                    placeholder="Numero carte etudiant?"
+                /><br />
+                Choisissez l'option :<select name="options" size="4">
+                    <option value="android">Android</option>
+                    <option value="html5">HTML5</option>
+                    <option value="dotnet">.NET</option>
+                    <option value="cpp">C++</option></select
+                ><br />
+             
+            </fieldset>
+
+            <input type="submit" value="Valider" />
+            <input type="reset" value="Réinitialiser" />
+        </form>
+    </body>
+</html>
